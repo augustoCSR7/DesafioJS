@@ -29,3 +29,7 @@ form {
 label { 
     color: red;
 }
+
+button {
+    padding:30px;
+}

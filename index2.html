@@ -3,15 +3,35 @@
         <meta charset="UTF-8">
         <title>Cadastro</title>
         <link rel="stylesheet" href="basico.css">
+        <title>Cadastro</title>
+        <script src="dados.js" defer></script>
     </head>
-    <body>
+    <body background="castelo2(js).jpg">
         <form>
             <div style="text-align: center;">
                 <fieldset> 
-                    <legend><h1>Preencha o cadastro</h1></legend>
-                        
-
-            
+                    <legend><h1>Realização do cadastro</h1></legend>
+                    <form action="javascript: dados();"></form>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id = "nome"/><br>
+                        <br>
+                        <label for="Matricula">Matricula</label>
+                        <input type="text" name="Matricula" id = "matricula"/><br>
+                        <br>
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id = "idade"/><br>
+                        <br>
+                        <label for="Endereço">Endereço</label>
+                        <input type="text" name="Endereço" id = "endereço" /><br>
+                        <br>
+                        <label for="turno">Turno</label>
+                        <select name="turno" id="turno">
+                            <option value="matutino" selected>Matutino</option>
+                            <option value="vespertino">Vespertino</option>
+                            <option value="noturno">Noturno</option>
+                        </select><br>
+                        <br>
+                        <input type="submit" id = "send" value="Confirmar">
                 </fieldset>
             </div>
         </form>
