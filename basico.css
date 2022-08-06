@@ -18,10 +18,14 @@ h3 {
     font: 14pt;
 }
 fieldset {
-    width: 100px;
+    width: 400px;
     margin: 0px auto;
 }
 
 form {
     text-align: center;
+}
+
+label { 
+    color: red;
 }
