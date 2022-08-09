@@ -1,5 +1,5 @@
 const formul = document.querySelector("#send")
-const saveButton = document.querySelector("#savebutton")
+const saveButton = document.getElementById("savebutton")
 
 
 formul.addEventListener("click", function(e)
@@ -61,3 +61,29 @@ console.log(cadastrado.idade);
 console.log(cadastrado.endereço);
 console.log(cadastrado.turno);
 });
+
+saveButton.addEventListener("click", function()
+{
+    var textToSave = document.getElementById("nome").value + " " +
+                    document.getElementById("matricula").value + " " +
+                    document.getElementById("idade").value + " " +
+                    document.getElementById("endereço").value + " " +
+                    document.getElementById("turno").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = "Cadastro";
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+});
+
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
