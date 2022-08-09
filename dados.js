@@ -1,6 +1,6 @@
 const formul = document.querySelector("#send")
 const saveButton = document.getElementById("savebutton")
-
+const inputFile = document.getElementById("inputFile")
 
 formul.addEventListener("click", function(e)
 {
