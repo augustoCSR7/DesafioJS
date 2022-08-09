@@ -3,6 +3,11 @@ body {
 
 }
 
+#body2 {
+    background-image: url("castelo2.jpg");
+    background-size: 100%;
+}
+
 h1 { 
     font-family: 'Tahoma';
     
