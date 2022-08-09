@@ -64,11 +64,11 @@ console.log(cadastrado.turno);
 
 saveButton.addEventListener("click", function()
 {
-    var textToSave = document.getElementById("nome").value + " " +
-                    document.getElementById("matricula").value + " " +
-                    document.getElementById("idade").value + " " +
-                    document.getElementById("endereço").value + " " +
-                    document.getElementById("turno").value;
+    var textToSave = "Nome = " + document.getElementById("nome").value + "\n" +
+                    "Matricula = " + document.getElementById("matricula").value + "\n" +
+                    "Idade = " + document.getElementById("idade").value + "\n" +
+                    "Endereço = " + document.getElementById("endereço").value + "\n" +
+                    "Turno = " + document.getElementById("turno").value;
     var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
     var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
     var fileNameToSaveAs = "Cadastro";
