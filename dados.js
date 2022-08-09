@@ -1,4 +1,5 @@
 const formul = document.querySelector("#send")
+const saveButton = document.querySelector("#savebutton")
 
 
 formul.addEventListener("click", function(e)
@@ -54,10 +55,9 @@ formul.addEventListener("click", function(e)
 
 
 // teste de verificação dos getters no console
-
-console.log(cadastrado.nome)
+console.log(cadastrado.nome);
 console.log(cadastrado.matricula);
 console.log(cadastrado.idade);
 console.log(cadastrado.endereço);
-console.log(cadastrado.turno)
+console.log(cadastrado.turno);
 });
