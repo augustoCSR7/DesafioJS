@@ -4,6 +4,7 @@ body {
 
 h1 { 
     font-family: 'Tahoma';
+    
     color: red;
     font: 24pt;
 }
@@ -20,6 +21,7 @@ h3 {
 fieldset {
     width: 400px;
     margin: 0px auto;
+    background-color: rgba(1, 1, 67, 0.692); 
 }
 
 form {
