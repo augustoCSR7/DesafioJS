@@ -81,6 +81,7 @@ saveButton.addEventListener("click", function()
     document.body.appendChild(downloadLink);
 
     downloadLink.click();
+    window.alert("Parabés, você foi matriculado, aqui está seu comprovante com os seus dados:");
 });
 
 function destroyClickedElement(event)
